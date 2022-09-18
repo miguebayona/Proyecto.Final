@@ -1,16 +1,18 @@
 div {
     width: 100px;
     height: 100px;
-    background-color: red;
     padding: 15px;
     p {
         font-size: 20px;
+        @extend font-size: 20px; 
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: Arial, sans-serif;  
     }
-}
+        } 
+
 body{
-    background-color: whitesmoke;
+    background-image: url(/IMG/Rojiblanco.jpeg); background-color: red;
+    b
     padding: 20px;
     main{
         .carousel{
@@ -28,4 +30,12 @@ body{
         background-color: rgb(255, 0, 0);
         width: 100%;
     }
+}
+
+@mixin carousel-inner{
+    margin: 30px;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            -ms-flex-align: center;
 }
